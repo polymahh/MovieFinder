@@ -1,0 +1,33 @@
+
+
+.Search {
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+	
+}
+input {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    height: 45px;
+    width: 40%;
+    background: transparent;
+    color: #ffffff;
+    appearance: none;
+    border: 0;
+    border: 1px solid #bebebe;
+    outline: none;
+    border-radius: 37px;
+    padding: 0 10px;
+    pointer-events: all;
+    transition: border .25s ease, width .125s ease .125s;
+}
+input:focus {
+			border: 2px solid #e50914;
+			width: 50%;
+        }

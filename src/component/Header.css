@@ -1,0 +1,37 @@
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1{
+    margin-left: 20px;
+}
+
+ul {
+		display: flex;
+		height: 37px;
+		align-items: center;
+		padding: 0 10px;
+			
+}
+
+a:link{
+    text-decoration: none;
+}
+
+li {
+    font-weight: 400;
+    padding: 7px 10px;
+    font-size: 14px;
+    transition: background .125s ease;
+    border-radius: 3px;
+    list-style: none;
+    
+}
+
+
+li:hover {
+    background: rgb(172, 3, 3);
+    cursor: pointer;
+}
