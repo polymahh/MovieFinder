@@ -1,0 +1,83 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description{
+  background-color: rgb(12, 11, 11);
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.description>h1{
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.genre,.additionalinfo{
+  margin: 5px;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.about {
+  padding: 0px 30px;
+  text-align: center;
+}
+
+hr{
+  width: 90%;
+}
+
+/* rating */
+.ratings{
+  width: 80%;
+  position: relative;
+  margin-bottom: 15px;
+
+}
+
+.rating-bar-box{
+  width: 85%;
+  height: 8px;
+  background: #fdfdfd63;
+  position: relative;
+  margin-top: 20px;
+
+}
+
+.rating-bar{ 
+width: 81%;
+height: 8px;
+background: #ffffff;
+}
+
+.percentage{
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+}
+
+/* .percentage::before{
+  content: '';
+  display: block;
+  width: 25px;
+  height: 17px;
+  border-bottom: 1px solid #BF1D1D;
+  border-right: 1px solid #BF1D1D;
+  position: absolute;
+  top: 10px;
+  left: 22px;
+
+} */
+
