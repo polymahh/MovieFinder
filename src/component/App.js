@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTitleContext } from "../titleContext";
 import Card from "./Card";
 import "./Card.css"
 import Search from "./Search";
@@ -9,6 +10,7 @@ function App() {
   
   const [movies,setMovies] = useState([])
   const [title, setTitle] = useState('')
+  const {title:mTitle,handleTitle} = useTitleContext()
 
   const itemsUrl = "https://www.omdbapi.com?apikey=20ed66a7"
   
@@ -18,29 +20,30 @@ function App() {
     console.log(items.Search)
     setMovies(items.Search)
   }
-  const getFeaturedMovies = async () => {
-    let result = await Promise.all([
-      fetch(`${itemsUrl}&s=batman&page=1`),
-      fetch(`${itemsUrl}&s=batman&page=2`),
-    ])
+  // const getFeaturedMovies = async () => {
+  //   let result = await Promise.all([
+  //     fetch(`${itemsUrl}&s=batman&page=1`),
+  //     fetch(`${itemsUrl}&s=batman&page=2`),
+  //   ])
 
-     let resultItems = await Promise.all([
-      result[0].json(),
-      result[1].json()
-    ]);
+  //    let resultItems = await Promise.all([
+  //     result[0].json(),
+  //     result[1].json()
+  //   ]);
 
-    let items = [...resultItems[0].Search,...resultItems[1].Search]
-    console.log(items)
-    setMovies(items)
-  }
+  //   let items = [...resultItems[0].Search,...resultItems[1].Search]
+  //   console.log(items)
+  //   setMovies(items)
+  // }
   
   useEffect(()=>{
-    getFeaturedMovies()
+    getMovies(mTitle)
   },[])
 
   const inputTitle = (e)=>{
     
     setTitle(e.target.value)
+    handleTitle(e.target.value)
     console.log(title)
     
   }
