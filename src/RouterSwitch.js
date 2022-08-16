@@ -13,9 +13,9 @@ function RouterSwitch() {
       <TitleProvider>
         <Header/>
       <Routes>
-        <Route path="/" element={<App/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/main/:id" element={<Main/>}/>
+        <Route path="/MovieFinder" element={<App/>}/>
+        <Route path="/MovieFinder/about" element={<About/>}/>
+        <Route path="/MovieFinder/main/:id" element={<Main/>}/>
       </Routes>
       </TitleProvider>
       </BrowserRouter>

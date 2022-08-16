@@ -9,10 +9,10 @@ function Header() {
         <h1>MovieFinder</h1>
       <nav>
         <ul>
-            <Link to="/">
+            <Link to="/MovieFinder">
                 <li>Home</li>
             </Link>
-            <Link to="/about">
+            <Link to="/MovieFinder/about">
                 <li>About</li>
             </Link>
             
