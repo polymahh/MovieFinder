@@ -1,7 +1,7 @@
 import App from "./component/App";
 import About from "./component/About";
 import Main from "./component/Main";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
 import Header from "./component/Header";
 import { TitleProvider } from "./titleContext";
@@ -13,9 +13,10 @@ function RouterSwitch() {
       <TitleProvider>
         <Header/>
       <Routes>
-        <Route path="/MovieFinder" element={<App/>}/>
-        <Route path="/MovieFinder/about" element={<About/>}/>
-        <Route path="/MovieFinder/main/:id" element={<Main/>}/>
+        <Route path="/" element={<Navigate to="/moviefinder" />}/>
+        <Route path="/moviefinder" element={<App/>}/>
+        <Route path="/moviefinder/about" element={<About/>}/>
+        <Route path="/moviefinder/:id" element={<Main/>}/>
       </Routes>
       </TitleProvider>
       </BrowserRouter>

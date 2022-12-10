@@ -16,11 +16,12 @@ const Main = () => {
   const [genre,setGenre] = useState([])
   const [actors,setActors] = useState([])
 
-  const movieUrl = "https://www.omdbapi.com?apikey=20ed66a7"
+  const movieUrl = `https://omdbapi.com/?apikey=20ed66a7&i=${params.id}`
 
   const fetchMovie = async ()=> {
 
-    const result = await fetch(`${movieUrl}&i=${params.id}`)
+    const result = await fetch(`${movieUrl}`)
+    console.log(movieUrl)
     const movieDetail = await result.json()
     setMovie(movieDetail)
     setGenre(movieDetail.Genre.split(', '))

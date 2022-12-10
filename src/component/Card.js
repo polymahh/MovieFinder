@@ -6,7 +6,7 @@ function Card(props) {
     
       
   <div className="card-grid-space">
-    <Link to={`/main/${props.movie.imdbID}`}>
+    <Link to={`/moviefinder/${props.movie.imdbID}`}>
     <div className="card"  style={{backgroundImage:`url(${props.movie.Poster})`}}>
       <div className="titleBox">
         <h3>{props.movie.Title}</h3>
