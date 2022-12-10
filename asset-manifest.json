@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/MovieFinder/static/css/main.17e6d094.css",
-    "main.js": "/MovieFinder/static/js/main.128b2d19.js",
-    "index.html": "/MovieFinder/index.html",
-    "main.17e6d094.css.map": "/MovieFinder/static/css/main.17e6d094.css.map",
-    "main.128b2d19.js.map": "/MovieFinder/static/js/main.128b2d19.js.map"
+    "main.css": "/static/css/main.17e6d094.css",
+    "main.js": "/static/js/main.128b2d19.js",
+    "index.html": "/index.html",
+    "main.17e6d094.css.map": "/static/css/main.17e6d094.css.map",
+    "main.128b2d19.js.map": "/static/js/main.128b2d19.js.map"
   },
   "entrypoints": [
     "static/css/main.17e6d094.css",
