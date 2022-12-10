@@ -4,7 +4,6 @@ import Card from "./Card";
 import "./Card.css"
 import Search from "./Search";
 
-// be00e222-cf34-485b-a10a-46d023064a81
 
 function App() {
   
@@ -20,21 +19,7 @@ function App() {
     console.log(items.Search)
     setMovies(items.Search)
   }
-  // const getFeaturedMovies = async () => {
-  //   let result = await Promise.all([
-  //     fetch(`${itemsUrl}&s=batman&page=1`),
-  //     fetch(`${itemsUrl}&s=batman&page=2`),
-  //   ])
 
-  //    let resultItems = await Promise.all([
-  //     result[0].json(),
-  //     result[1].json()
-  //   ]);
-
-  //   let items = [...resultItems[0].Search,...resultItems[1].Search]
-  //   console.log(items)
-  //   setMovies(items)
-  // }
   
   useEffect(()=>{
     getMovies(mTitle)
